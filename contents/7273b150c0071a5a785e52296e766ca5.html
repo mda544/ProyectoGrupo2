@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>DAOUsuario</title>
+    <title>modificarTrabajador</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,14 +19,14 @@
 
       <!-- Name Title -->
 
-      <h1>DAOUsuario</h1>
+      <h1>modificarTrabajador</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLInterface"></span>
-          UMLInterface
+          <span class="node-icon staruml-icon icon-UMLOperation"></span>
+          UMLOperation
         </span>
         
       </section>
@@ -48,6 +48,9 @@
         
           <span>::</span>
           <span class="label label-info"><a href='a64e731fa13929159aade0e5d8015e1b.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>DAOUsuario</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='7273b150c0071a5a785e52296e766ca5.html'><span class='node-icon staruml-icon icon-UMLOperation'></span>modificarTrabajador</a></span>
         
       </section>
 
@@ -83,49 +86,8 @@
       <!-- Classifier -->
 
       
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-      
 
       <!-- Interface -->
-
-      
-        
-        
-<section class="element-list">
-    <h3>Implementing Classifiers</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='a3d5b4677b1fd7fb5e4fd8f44ea48dd7.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion de puja</a></li>
-        
-        <li><a href='225ed1f5712fcd000990f475fa13e907.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion de valoraciones</a></li>
-        
-        <li><a href='cddac386f91c5a8346876c2b106f5225.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion de comunicacion</a></li>
-        
-        <li><a href='3e79f9a3dcc5a6db2401de3d26210209.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion servicio vip</a></li>
-        
-        <li><a href='5699ef7d35cf959277cfb544cb9b757b.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Datos de Usuarios</a></li>
-        
-    </ul>
-</section>
-
 
       
 
@@ -160,30 +122,6 @@
       <!-- Operations -->
 
       
-      <section>
-        <h3>Operations</h3>
-        <table class="table table-striped table-bordered">
-          <tr>
-            <th>Visibility</th>
-            <th>Name</th>
-            <th>Description</th>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="35c2c957c4e9a2d082d0c014d9a7ea93.html">ObtenerTrabajador(idUsuario: String): Trabajador</a></td>
-            <td></td>
-          </tr>
-          
-          <tr>
-            <td>public</td>
-            <td><a href="7273b150c0071a5a785e52296e766ca5.html">modificarTrabajador(t: Trabajador): boolean</a></td>
-            <td></td>
-          </tr>
-          
-        </table>
-      </section>
-      
 
       <!-- Receptions -->
 
@@ -195,6 +133,33 @@
 
       <!-- Parameters -->
 
+      
+      <section>
+        <h3>Parameters</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Direction</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>in</td>
+            <td><a href="847c0d063bf918e2ce74668dcccabb29.html">t</a></td>
+            <td><a href='b6c930ce32485e7391c44f2ea943441a.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Trabajador</a> </td>
+            <td></td>
+          </tr>
+          
+          <tr>
+            <td>return</td>
+            <td><a href="84a3aaf27e088df759f78ecd3c688ee8.html">Parameter1</a></td>
+            <td>boolean </td>
+            <td></td>
+          </tr>
+          
+        </table>
+      </section>
       
 
       <!-- Diagrams -->
@@ -281,7 +246,7 @@
     
     <tr>
         <td>name</td>
-        <td>DAOUsuario</td>
+        <td>modificarTrabajador</td>
     </tr>
     
     
@@ -314,9 +279,74 @@
     
     
     
+    <tr>
+        <td>isStatic</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
     
     
     
+    
+    
+    <tr>
+        <td>isLeaf</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>featureDirection</td>
+        <td>provided</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>parameters</td>
+        <td>
+            
+            
+            <a href='847c0d063bf918e2ce74668dcccabb29.html'><span class='node-icon staruml-icon icon-UMLParameter'></span>t</a>
+            
+            <span>, </span>
+            <a href='84a3aaf27e088df759f78ecd3c688ee8.html'><span class='node-icon staruml-icon icon-UMLParameter'></span>Parameter1</a>
+            
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>raisedExceptions</td>
+        <td>
+            
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>concurrency</td>
+        <td>sequential</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isQuery</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
     
     
     
@@ -332,18 +362,15 @@
     
     
     <tr>
-        <td>isFinalSpecialization</td>
-        <td><span class='label label-info'>false</span></td>
+        <td>specification</td>
+        <td></td>
     </tr>
     
     
     
     
     
-    <tr>
-        <td>isLeaf</td>
-        <td><span class='label label-info'>false</span></td>
-    </tr>
+    
     
     
     
@@ -368,29 +395,6 @@
 
         
         
-<section class="element-list">
-    <h3>Dependants</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='832c391dfc9d54831cf81cf880d8440b.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion de usuario</a></li>
-        
-        <li><a href='a3d5b4677b1fd7fb5e4fd8f44ea48dd7.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion de puja</a></li>
-        
-        <li><a href='225ed1f5712fcd000990f475fa13e907.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion de valoraciones</a></li>
-        
-        <li><a href='dcff0ee5eafc2ba1193dc06ea4e7bced.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion de tinder</a></li>
-        
-        <li><a href='cddac386f91c5a8346876c2b106f5225.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion de comunicacion</a></li>
-        
-        <li><a href='ff6c9fd525ebadec168ddcda17a446f7.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion agenda</a></li>
-        
-        <li><a href='3e79f9a3dcc5a6db2401de3d26210209.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestion servicio vip</a></li>
-        
-        <li><a href='5699ef7d35cf959277cfb544cb9b757b.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Datos de Usuarios</a></li>
-        
-    </ul>
-</section>
-
 
       
 
@@ -398,29 +402,6 @@
 
       
       
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='63ca504c45e2ff9b5a41343a18f8ed89.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Gestion de usuario→DAOUsuario)</a></li>
-        
-        <li><a href='c41c95cd44f544dbcaffacce25356553.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestion de puja→DAOUsuario)</a></li>
-        
-        <li><a href='a0c4c4faf6f09312ec1d468063c3512a.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestion de valoraciones→DAOUsuario)</a></li>
-        
-        <li><a href='20865ec350e09194d515c3d20a75a666.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Gestion de tinder→DAOUsuario)</a></li>
-        
-        <li><a href='a23b19fae84f477fb3b5973ce3d131dd.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestion de comunicacion→DAOUsuario)</a></li>
-        
-        <li><a href='7b4bedad07345edff9ebfa6d99b12645.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Gestion agenda→DAOUsuario)</a></li>
-        
-        <li><a href='b65d72da6088645388e0c8d8ddc953e9.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestion servicio vip→DAOUsuario)</a></li>
-        
-        <li><a href='5fcecf074487ab38082d47647d151cce.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Datos de Usuarios→DAOUsuario)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Owned Elements -->
