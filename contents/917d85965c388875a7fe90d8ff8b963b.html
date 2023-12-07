@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>ACTIVO</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,14 +19,14 @@
 
       <!-- Name Title -->
 
-      <h1>(unnamed)</h1>
+      <h1>ACTIVO</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLTransition"></span>
-          UMLTransition
+          <span class="node-icon staruml-icon icon-UMLState"></span>
+          UMLState
         </span>
         
       </section>
@@ -44,13 +44,13 @@
           <span class="label label-info"><a href='ebe96334ba0e33d26bfa74e45934be51.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Diseño</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='8e0695c0308330951e93289e44ece7b1.html'><span class='node-icon staruml-icon icon-UMLStateMachine'></span>Estados usuario</a></span>
+          <span class="label label-info"><a href='7a86db0bab8d0ae54f1192494df1faf2.html'><span class='node-icon staruml-icon icon-UMLStateMachine'></span>Estados suscripcion</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='cf4c155ec0f82599670444dd616d5fa9.html'><span class='node-icon staruml-icon icon-UMLRegion'></span>(Region)</a></span>
+          <span class="label label-info"><a href='47eaa3b60e4b9dfe65e4f7c19003eb56.html'><span class='node-icon staruml-icon icon-UMLRegion'></span>(Region)</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='04698a8bf8d3c9ea909d12200a004543.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Baneo permanentes→Inactiva)</a></span>
+          <span class="label label-info"><a href='917d85965c388875a7fe90d8ff8b963b.html'><span class='node-icon staruml-icon icon-UMLState'></span>ACTIVO</a></span>
         
       </section>
 
@@ -77,25 +77,6 @@
 
       <!-- Directed Relationship -->
 
-      
-      <section class="element-list">
-        <table width="100%">
-          <tr>
-            <td width="50%">
-              <h3>Source</h3>
-              <ul class="nav nav-list">
-                <li><a href='ee1682dd3a30ad6cf38f2ca84dc737a0.html'><span class='node-icon staruml-icon icon-UMLState'></span>Baneo permanentes</a></a></li>
-              </ul>
-            </td>
-            <td width="50%">
-              <h3>Target</h3>
-              <ul class="nav nav-list">
-                <li><a href='e3fc9e43373cf43cd73b218e75eba4f1.html'><span class='node-icon staruml-icon icon-UMLState'></span>Inactiva</a></a></li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </section>
       
 
       <!-- Undirected Relationship -->
@@ -190,38 +171,68 @@
       <!-- State -->
 
       
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
 
       <!-- Vertex -->
 
       
+        
+        
+<section class="element-list">
+    <h3>Incoming Transitions</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='066410db07d5a5c6e7155abed321f671.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>suscribirse(mesesS: int) (INACTIVO→ACTIVO)</a></li>
+        
+        <li><a href='2707248dd88d2981611b65deb863630f.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>renovar(mesesS: int) / {meses = meses + mesesS} (ACTIVO→ACTIVO)</a></li>
+        
+        <li><a href='d32be4fbf5262605d30a78bab432bbdb.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>reaudar() (PAUSADO→ACTIVO)</a></li>
+        
+        <li><a href='73d1e955c34d965d9a5758e763a755ba.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>[meses&gt;= 1] / {meses--} (MENSUALIDAD→ACTIVO)</a></li>
+        
+    </ul>
+</section>
 
-      <!-- Transition -->
+
+
+        
+        
+<section class="element-list">
+    <h3>Outgoing Transitions</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='a3f735c99cd0ca147528a31d7d05b862.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>pausar() (ACTIVO→PAUSADO)</a></li>
+        
+        <li><a href='2707248dd88d2981611b65deb863630f.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>renovar(mesesS: int) / {meses = meses + mesesS} (ACTIVO→ACTIVO)</a></li>
+        
+        <li><a href='720bfe6c49a128902e30f16a9d1c26ec.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>mensualidad(meses: int) (ACTIVO→MENSUALIDAD)</a></li>
+        
+    </ul>
+</section>
+
 
       
-        
-        
-<section class="element-list">
-    <h3>Triggers</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='e7bde07d97bbf2a8e6217928dcc25f4a.html'><span class='node-icon staruml-icon icon-UMLEvent'></span>after (1 año)</a></li>
-        
-    </ul>
-</section>
 
-
-
-        
-        
-<section class="element-list">
-    <h3>Effects</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='06e8b4df4a7fae3e01cdbb09f7c6524e.html'><span class='node-icon staruml-icon icon-UMLOpaqueBehavior'></span>{borrarCuenta()}</a></li>
-        
-    </ul>
-</section>
-
+      <!-- Transition -->
 
       
 
@@ -264,7 +275,7 @@
     
     <tr>
         <td>name</td>
-        <td></td>
+        <td>ACTIVO</td>
     </tr>
     
     
@@ -272,24 +283,6 @@
     
     
     
-    
-    
-    
-    
-    
-    <tr>
-        <td>source</td>
-        <td><a href='ee1682dd3a30ad6cf38f2ca84dc737a0.html'><span class='node-icon staruml-icon icon-UMLState'></span>Baneo permanentes</a></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>target</td>
-        <td><a href='e3fc9e43373cf43cd73b218e75eba4f1.html'><span class='node-icon staruml-icon icon-UMLState'></span>Inactiva</a></td>
-    </tr>
     
     
     
@@ -313,21 +306,20 @@
     
     
     
-    <tr>
-        <td>kind</td>
-        <td>external</td>
-    </tr>
+    
+    
+    
+    
+    
     
     
     
     
     
     <tr>
-        <td>guard</td>
-        <td></td>
+        <td>submachine</td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
-    
-    
     
     
     
@@ -344,11 +336,42 @@
       <!-- Constraints, Dependencies, Dependants -->
 
       
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
 
       <!-- Relationships -->
 
       
       
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='066410db07d5a5c6e7155abed321f671.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>suscribirse(mesesS: int) (INACTIVO→ACTIVO)</a></li>
+        
+        <li><a href='a3f735c99cd0ca147528a31d7d05b862.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>pausar() (ACTIVO→PAUSADO)</a></li>
+        
+        <li><a href='2707248dd88d2981611b65deb863630f.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>renovar(mesesS: int) / {meses = meses + mesesS} (ACTIVO→ACTIVO)</a></li>
+        
+        <li><a href='d32be4fbf5262605d30a78bab432bbdb.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>reaudar() (PAUSADO→ACTIVO)</a></li>
+        
+        <li><a href='720bfe6c49a128902e30f16a9d1c26ec.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>mensualidad(meses: int) (ACTIVO→MENSUALIDAD)</a></li>
+        
+        <li><a href='73d1e955c34d965d9a5758e763a755ba.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>[meses&gt;= 1] / {meses--} (MENSUALIDAD→ACTIVO)</a></li>
+        
+    </ul>
+</section>
+
 
 
       <!-- Owned Elements -->
